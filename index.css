@@ -92,6 +92,8 @@ h2 {
 	margin-bottom: 2rem;
 }
 
+/* CTA Styling */
+
 .about-summary {
 	font-size: 1.4rem;
 	text-align: center;
@@ -109,7 +111,44 @@ h2 {
 	border: 1px solid black;
 }
 
+
+/* Projects Styling */
+
+.projects {
+    width: 75%;
+    margin: 0 auto;
+}
+
+ h2 {
+    display: block;
+    text-align: center;
+    width: 100%;
+}
+
 .container {
-	display: flex;
-	flex-wrap: wrap;
+    display: flex;
+    font-size: 1.2rem;
+}
+
+.container p {
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+    padding-top: 1.4rem;
+    text-align: center;
+    margin: 0 auto;
+}
+
+/* MEDIA QUERIES */
+
+/* Tablet Size */
+
+@media(max-width: 800px){
+    .projects {
+        flex-direction: column;
+    }
+    
+    .container img {
+        width: 35%;
+        height: auto;
+    }
 }
